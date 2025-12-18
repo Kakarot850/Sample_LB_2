@@ -2,7 +2,7 @@ import React from "react";
 
 const ButtonRight = () => {
     return (
-        <div className="relative hover:scale-105 transition-transform duration-200 cursor-pointer">
+        <div className="relative hover:scale-105 transition-transform duration-200 cursor-pointer ">
             <div>
                 <svg width="143" height="38" viewBox="0 0 143 38" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_158_604)">
@@ -60,7 +60,7 @@ const ButtonRight = () => {
                 </svg>
             </div>
             <div className="absolute inset-0 uppercase flex items-center justify-center gap-2 text-white text-[11px] font-extrabold tracking-0 font-archivo">
-                <img src="/leaderboard/roobet-logo.svg" alt="code icon" className="w-[22px] h-[22px]" />  
+                <img src="/leaderboard/roobet-logo.svg" alt="code icon" className="w-[22px] h-[22px]" />
                 join Roobet
             </div>
         </div>

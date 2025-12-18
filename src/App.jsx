@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 function App() {
     return (
         <BrowserRouter>
-            <div className="min-h-screen bg-[#111111]">
+            <div className="min-h-screen bg-[#111111] overflow-clip">
                 <Header />
                 <main className="min-h-screen">
                     <Routes>
@@ -18,7 +18,7 @@ function App() {
                     <div
                         className="
                                     absolute -top-30 left-1/2 -translate-x-1/2
-                                    w-[1600px] h-[200px]
+                                   w-[1600px] h-[200px]
                                     bg-[radial-gradient(circle,rgba(4,0,255,1)_0%,rgba(51,136,230,0.15)_60%,rgba(4,0,255,1)_100%)]
                                     blur-[220px]
                                     pointer-events-none

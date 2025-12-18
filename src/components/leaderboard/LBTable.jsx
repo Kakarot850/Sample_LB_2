@@ -14,9 +14,9 @@ function LBTable({ lbData }) {
 
     return (
         <>
-            <div className="w-full max-w-[778px] mx-auto text-white font-archivo">
+            <div className="w-full max-w-[778px] mx-auto text-white font-archivo  text-[14px] md:text-[17px]  max-md:px-4">
                 <div class="grid grid-cols-4 font-bold px-4 mb-2 uppercase">
-                    <div className="flex items-center gap-2 text-[15px] font-bold">
+                    <div className="flex items-center md:gap-2  font-bold">
                         {/* <img src="/leaderboard/lbTable/assets/hash.svg" alt="trophy" className="w-4 h-4" /> */}
                         <span>
                             <svg
@@ -34,7 +34,7 @@ function LBTable({ lbData }) {
                         </span>
                         PLACE
                     </div>
-                    <div class="flex items-center gap-2 text-[15px] ml-2 font-bold">
+                    <div class="flex items-center md:gap-2  ml-2 font-bold">
                         {/* <img src="/leaderboard/lbTable/assets/profile.svg" alt="user" className="w-4 h-4" /> */}
                         <span>
                             <svg
@@ -52,7 +52,7 @@ function LBTable({ lbData }) {
                         </span>
                         USER
                     </div>
-                    <div class="flex items-center gap-2 text-[15px] ml-0.5 font-bold">
+                    <div class="flex items-center md:gap-2  ml-0.5 font-bold">
                         {/* <img src="/leaderboard/lbTable/assets/wager.svg" alt="wager" className="w-4 h-4" /> */}
                         <span>
                             <svg
@@ -70,7 +70,7 @@ function LBTable({ lbData }) {
                         </span>
                         WAGER
                     </div>
-                    <div class="flex items-center gap-2 justify-end mr-8 text-[15px] font-bold">
+                    <div class="flex items-center md:gap-2 justify-end md:mr-8  font-bold">
                         <span>
                             <svg
                                 width="15"
@@ -98,25 +98,25 @@ function LBTable({ lbData }) {
                         return (
                             <div
                                 key={entry.place}
-                                className="grid grid-cols-4 h-[54px] items-center border border-gray-900 rounded-lg px-3.5 py-2"
+                                className="grid grid-cols-4 h-[54px] items-center border border-gray-900 rounded-lg md:px-3.5 py-2"
                                 style={{
                                     backgroundImage: `url(${bg})`,
                                     backgroundSize: "cover",
                                     backgroundPosition: "center",
                                 }}
                             >
-                                <div class="font-bold w-[58px] px-3 py-0.5 bg-[#1F1F1F] text-[16px]">{i + 4}TH</div>
-                                <div class="flex items-center gap-1 font-bold text-[16px]">
+                                <div class="font-bold w-[58px] px-3 py-0.5 bg-[#1F1F1F] ">{i + 4}TH</div>
+                                <div class="flex items-center gap-1 font-bold ">
                                     <div class="rounded-full flex items-center justify-center">
                                         <img src="/pig.svg" alt="pig" className="size-6" />
                                     </div>
                                     {entry.username}
                                 </div>
-                                <div class="font-bold text-[16px]">{entry.wagered.toLocaleString()}$</div>
+                                <div class="font-bold ">{entry.wagered.toLocaleString()}$</div>
                                 {/* fourth col */}
-                                <div class="text-right font-bold  flex items-center justify-end  gap-2 mr-6">
-                                    <div className=" flex flex-row min-w-17 ">
-                                        <div class="rounded-full flex items-center justify-center gap-2">
+                                <div class="text-right font-bold  flex items-center justify-end  md:mr-6">
+                                    <div className=" flex flex-row min-w-14 md:min-w-17 ">
+                                        <div class="rounded-full flex items-center justify-center gap-0">
                                             <span>
                                                 <svg
                                                     width="17"
